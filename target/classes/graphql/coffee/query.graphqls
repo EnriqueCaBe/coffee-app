@@ -1,0 +1,17 @@
+type Query {
+    getAllCoffees(filters: CoffeeFilters): [Coffee]!
+    getCoffeeById(id: String!): Coffee
+}
+
+input CoffeeFilters{
+    name: String
+    acidity: Int
+    body: Int
+    bitterness: Int
+    roast: Int
+    intensity: Int
+    caffeine: Boolean
+    type: Type
+    size: [Size]
+    flavours: [Flavour]
+}

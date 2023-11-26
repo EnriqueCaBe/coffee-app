@@ -1,0 +1,47 @@
+type Coffee{
+    id: String!
+    name: String!
+    shortDescription: String!
+    description: String!
+    acidity: Int!
+    body: Int!
+    bitterness: Int!
+    roast: Int!
+    intensity: Int!
+    price: Float!
+    caffeine: Boolean!
+    type: Type!
+    size: [Size]!
+    flavours: [Flavour]!
+}
+
+enum Type{
+    ORIGINAL
+    VERTUO
+}
+
+enum Size {
+    RISTRETTO
+    ESPRESSO
+    LUNGO
+    CAPUCCINO
+    CORTADO
+}
+
+enum Flavour{
+    ROAST
+    FRUITY
+    WOODY
+    CEREAL
+    INTENSE
+    CACAO
+    CARAMEL
+    BALANCED
+    SPICY
+    COOKIES
+    FLORAL
+    HONEY
+    SWEETIE
+    HAZELNUT
+    CITRIC
+}

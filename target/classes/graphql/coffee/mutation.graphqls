@@ -1,0 +1,26 @@
+type Mutation {
+    addCoffee(coffee: CoffeeInput): Coffee
+    editCoffeeById(
+        id: String!
+        params: CoffeeInput!
+    ): Coffee
+    deleteCoffeeById(
+        id: String!
+    ): Coffee
+}
+
+input CoffeeInput{
+    name: String!
+    shortDescription: String!
+    description: String!
+    acidity: Int!
+    body: Int!
+    bitterness: Int!
+    roast: Int!
+    intensity: Int!
+    price: Float!
+    caffeine: Boolean!
+    type: Type!
+    size: [Size]!
+    flavours: [Flavour]!
+}
